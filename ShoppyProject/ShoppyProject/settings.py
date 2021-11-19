@@ -24,7 +24,7 @@ STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 SECRET_KEY = 'z_s4m5fl5iqbr%!gh5mz(u3k*u7f_8dy(b6u@l4)mr-*+dutof'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1','shoppy-capstone.herokuapp.com']
 
