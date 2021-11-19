@@ -51,16 +51,16 @@ class ShippingAdress(models.Model):
     orderId    = models.IntegerField(blank=True, null=True)
     orderPlaced = models.BooleanField(default=False,blank=True,null=True)
 
-class OrderItemModel(models.Model):
-    user = models.ForeignKey(UserProfileRegistrationModel,on_delete=models.SET_NULL,blank=True,null=True)
-    ordered = models.BooleanField(default=False)
-    item = models.ForeignKey(ItemModel, on_delete=models.CASCADE)
-    quantity = models.IntegerField(default=1)
+# class OrderItemModel(models.Model):
+#     user = models.ForeignKey(UserProfileRegistrationModel,on_delete=models.SET_NULL,blank=True,null=True)
+#     ordered = models.BooleanField(default=False)
+#     item = models.ForeignKey(ItemModel, on_delete=models.CASCADE)
+#     quantity = models.IntegerField(default=1)
     # order = models.ForeignKey(OrderModel,on_delete=models.CASCADE)
 
     
-    def get_total_item_price(self):
-        return round(self.quantity * self.item.price,2)
+    # def get_total_item_price(self):
+    #     return round(self.quantity * self.item.price,2)
 
     # def get_total_discount_item_price(self):
     #     return self.quantity * self.item.discount_price
